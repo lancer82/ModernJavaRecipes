@@ -1,5 +1,11 @@
 package enums;
 
+/**
+ * 调用valueOf() 方法获取枚举的一个成员，再调用 compareTo() 方法进行比较，并输出结果。具体实现代码如下
+ * @author lp_jo
+ *
+ */
+
 public class SexEnumTest {
 
     public enum Sex {
@@ -7,7 +13,7 @@ public class SexEnumTest {
         male,female;
     }
     public static void main(String[] args) {
-        compare(Sex.valueOf("male"));    // 比较
+        compare(Sex.valueOf("female"));    // 比较
     }
     public static void compare(Sex s) {
         for(int i = 0;i < Sex.values().length;i++) {
